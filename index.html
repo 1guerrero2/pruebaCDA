@@ -1,1 +1,792 @@
-<h1>Github de Prueba</h1>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iglesia Cristiana CDA</title>
+    <!-- SEO Best Practices -->
+    <meta name="description"
+        content="Iglesia Esperanza es una comunidad de fe vibrante. Te invitamos a unirte a nuestros servicios, eventos y ministerios para crecer juntos.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for typography -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Ionicons for modern icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <!-- Notificación de Éxito -->
+    <div id="toast-notification" class="toast-notification">
+        <ion-icon name="checkmark-circle-outline"></ion-icon>
+        <span>¡Gracias! Tu mensaje ha sido enviado a la comunidad.</span>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="main-nav">
+        <div class="container nav-content">
+            <a href="#" class="logo">Iglesia Cristiana <span>Casa Del Alfarero AG</span></a>
+
+            <!-- Mobile Toggle -->
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <span class="hamburger">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </span>
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#ministerios">Ministerios</a></li>
+                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto" class="btn-primary">Conéctate</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="inicio" class="hero">
+        <div class="hero-bg" id="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="fade-in">Bienvenidos a CDA</h1>
+            <p class="fade-in delay-1">Encuentra esperanza, fe y una comunidad que te ama. Un lugar para tí !</p>
+            <div class="hero-buttons fade-in delay-2">
+                <a href="#contacto" class="btn-primary">Planifica tu visita</a>
+                <a href="#nosotros" class="btn-secondary">Conoce más</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="nosotros" class="section about-section">
+        <div class="container about-grid">
+            <div class="about-text slide-up">
+                <h2>Nuestra Misión</h2>
+                <p>Nuestra misión es llevar el amor y la esperanza a cada persona, familia y comunidad. Creemos en un
+                    mensaje transformador que cambia vidas y restaura corazones.</p>
+                <p>Ven tal como eres. Aquí encontrarás un lugar para pertenecer, crecer y servir a través de nuestra fe
+                    compartida.</p>
+                <ul class="about-features">
+                    <li><ion-icon name="heart-outline"></ion-icon> <span>Amor incondicional en acción</span></li>
+                    <li><ion-icon name="people-outline"></ion-icon> <span>Una comunidad unida y solidaria</span></li>
+                    <li><ion-icon name="book-outline"></ion-icon> <span>Crecimiento y formación espiritual</span></li>
+                </ul>
+            </div>
+            <div class="about-image slide-up delay-1">
+                <div class="glass-card image-placeholder">
+                    <span>Reuniones cada Domingo</span>
+                    <h3>10:00 AM & 12:30 PM</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ministries Section -->
+    <section id="ministerios" class="section dark-section">
+        <div class="container">
+            <div class="section-header center slide-up">
+                <h2>Nuestros Ministerios</h2>
+                <p>Hay un lugar para ti en nuestra familia. Descubre dónde puedes conectarte y desarrollar tu propósito.
+                </p>
+            </div>
+            <div class="grid-3">
+                <div class="glass-card ministry-card hover-lift slide-up delay-1">
+                    <ion-icon name="happy-outline" class="ministry-icon"></ion-icon>
+                    <h3>Niños Hope</h3>
+                    <p>Un ambiente seguro, creativo y divertido donde los más pequeños aprenden valores y principios de
+                        vida.</p>
+                </div>
+                <div class="glass-card ministry-card hover-lift slide-up delay-2">
+                    <ion-icon name="flame-outline" class="ministry-icon"></ion-icon>
+                    <h3>Jóvenes Vivos</h3>
+                    <p>Una comunidad dinámica para adolescentes y jóvenes que buscan propósito, amistades reales y
+                        dirección.</p>
+                </div>
+                <div class="glass-card ministry-card hover-lift slide-up delay-3">
+                    <ion-icon name="home-outline" class="ministry-icon"></ion-icon>
+                    <h3>Grupos Pequeños</h3>
+                    <p>Reuniones en hogares durante la semana para conectar, compartir tiempos de oración y crecer
+                        juntos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Último Sermón (Video) -->
+    <section id="sermones" class="section sermon-section">
+        <div class="container">
+            <div class="section-header center slide-up">
+                <span class="badge-tag">Sermón Dominical</span>
+                <h2>Transformados por Amor</h2>
+                <p>Serie: El Camino a la Restauración</p>
+            </div>
+
+            <div class="sermon-grid">
+                <!-- Poster/Thumbnail Card (Left) -->
+                <div class="video-poster-card slide-up delay-1" id="sermon-play-btn" aria-label="Reproducir Sermón" tabindex="0">
+                    <!-- <img src="images/002.mp4" alt="Video del Sermón" class="poster-img" loading="lazy"> -->
+
+                    <p><video controls width="100%" height="100%" poster="images/014.jpeg"><source src= "videos/002.mp4" type= "video/mp4" /></video></p>
+                    
+                    <!-- <div class="poster-overlay">
+                        <button class="play-btn" tabindex="-1">
+                            <ion-icon name="play-circle"></ion-icon>
+                        </button>
+                    </div> -->
+                </div>
+
+                <!-- Sermon Details (Right) -->
+                <div class="sermon-info slide-up delay-2">
+                    <div class="info-content">
+                        <p class="sermon-date"><ion-icon name="calendar-outline"></ion-icon> Domingo, Octubre 24</p>
+                        <h3>Transformados por Amor</h3>
+                        <p class="sermon-scripture"><strong>Romanos 12:2</strong> — "No se amolden al mundo actual, sino
+                            sean transformados mediante la renovación de su mente."</p>
+                        <p class="sermon-desc">Descubre cómo el verdadero amor puede cambiar tu perspectiva, sanar tu
+                            corazón y guiarte a un propósito eterno.</p>
+
+                        <div class="sermon-action">
+                            <a href="https://www.youtube.com/@iglesiacristianaCDA" target="blank" class="btn btn-outline" style="border-radius: 5px;">Ver Sermones
+                                Pasados</a>
+                            <a href="#contacto" class="btn btn-primary" style="background: var(--primary);"><ion-icon
+                                    name="book-outline"></ion-icon> Ver Apuntes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events & Calendar Section -->
+    <section id="eventos" class="section events-section">
+        <div class="container">
+            <div class="section-header center slide-up">
+                <h2>Nuestra Agenda</h2>
+                <p>Participa en nuestras actividades y mantente al tanto de todo lo que sucede este mes.</p>
+            </div>
+
+            <div class="events-calendar-grid">
+                <!-- Highlighted Events List -->
+                <div class="events-list-wrapper slide-up delay-1">
+                    <h3 class="grid-title" style="margin-bottom: 2rem; font-size: 1.5rem;">Eventos Destacados</h3>
+                    <div class="events-list">
+                        <div class="event-item hover-subtle slide-up delay-1">
+                            <div class="event-date">
+                                <span class="day">15</span>
+                                <span class="month">Oct</span>
+                            </div>
+                            <div class="event-details">
+                                <h3>Noche de Adoración y Alabanza</h3>
+                                <p>Únete a nosotros para una noche especial llena de música inspiradora y oración
+                                    comunitaria.</p>
+                            </div>
+                            <div class="event-action">
+                                <a href="#contacto" class="btn-outline">Detalles</a>
+                            </div>
+                        </div>
+                        <div class="event-item hover-subtle slide-up delay-2">
+                            <div class="event-date">
+                                <span class="day">22</span>
+                                <span class="month">Oct</span>
+                            </div>
+                            <div class="event-details">
+                                <h3>Retiro Anual de Mujeres</h3>
+                                <p>Un fin de semana diseñado para la renovación espiritual, el descanso y el hermoso
+                                    compañerismo.</p>
+                            </div>
+                            <div class="event-action">
+                                <a href="#contacto" class="btn-outline">Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Calendar -->
+                <div class="calendar-wrapper slide-up delay-2">
+                    <div class="calendar-header">
+                        <button id="prev-month" aria-label="Mes anterior"><ion-icon
+                                name="chevron-back-outline"></ion-icon></button>
+                        <h3 id="calendar-month">Cargando...</h3>
+                        <button id="next-month" aria-label="Mes siguiente"><ion-icon
+                                name="chevron-forward-outline"></ion-icon></button>
+                    </div>
+                    <div class="calendar-weekdays">
+                        <span>Dom</span><span>Lun</span><span>Mar</span><span>Mié</span><span>Jue</span><span>Vie</span><span>Sáb</span>
+                    </div>
+                    <div class="calendar-days" id="calendar-days">
+                        <!-- Generado por JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeria" class="section dark-section">
+        <div class="container">
+            <div class="section-header center slide-up">
+                <h2>Nuestra Comunidad</h2>
+                <p>Revive los mejores momentos de nuestros eventos y reuniones</p>
+            </div>
+            <div class="gallery-grid">
+                <!-- 8 Images -->
+                <div class="gallery-item span-col-2 span-row-2 slide-up">
+                    <img src="images/043.jpeg" alt="Bautizos"
+                        loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Bautizos</h4>
+                        <ion-icon name="expand-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="gallery-item slide-up delay-1">
+                    <img src="images/044.jpeg" alt="Concierto"
+                        loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Concierto</h4>
+                        <ion-icon name="expand-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="gallery-item slide-up delay-2">
+                    <img src="images/007.jpeg" alt="Comunidad"
+                        loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Comunidad</h4>
+                        <ion-icon name="expand-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="gallery-item span-col-2 slide-up">
+                    <img src="images/048.jpeg" alt="Adoración"
+                        loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Adoración</h4>
+                        <ion-icon name="expand-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="gallery-item slide-up delay-1">
+                    <img src="images/020.jpeg" alt="Música"
+                        loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Música</h4>
+                        <ion-icon name="expand-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="gallery-item slide-up delay-2">
+                    <img src="images/032.jpeg"
+                        alt="Grupos Pequeños" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Grupos</h4>
+                        <ion-icon name="expand-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="gallery-item slide-up">
+                    <img src="images/071.jpeg"
+                        alt="Retiro Jóvenes" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Retiro Jóvenes</h4>
+                        <ion-icon name="expand-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="gallery-item slide-up delay-1">
+                    <img src="images/079.jpeg"
+                        alt="Servicio Dominical" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Servicio</h4>
+                        <ion-icon name="expand-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Editorial / Reflection Section -->
+    <section id="reflexion" class="section editorial-section">
+        <div class="container editorial-grid">
+            <!-- Peticiones Box (Left) -->
+            <div class="feedback-card slide-up">
+                <div class="feedback-header">
+                    <h3>Buzón de la Comunidad</h3>
+                    <p>Déjanos tu petición de oración, sugerencia o testimonio.</p>
+                </div>
+                <form class="feedback-form" action="enviar_correo.php" method="POST">
+                    <div class="form-group">
+                        <label for="feedback-name">Nombre (Opcional)</label>
+                        <input type="text" id="feedback-name" name="nombre" placeholder="Escribe tu nombre (Opcional)">
+                    </div>
+                    <div class="form-group">
+                        <label for="feedback-type">¿Qué deseas compartir?</label>
+                        <select id="feedback-type" name="tipo_mensaje" required>
+                            <option value="" disabled selected>Selecciona un motivo</option>
+                            <option value="peticion">Petición de Oración</option>
+                            <option value="testimonio">Testimonio / Agradecimiento</option>
+                            <option value="sugerencia">Sugerencia</option>
+                            <option value="saludo">Saludo / Felicitación</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="feedback-message">Mensaje</label>
+                        <textarea id="feedback-message" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Enviar Mensaje <ion-icon
+                            name="send-outline"></ion-icon></button>
+                </form>
+            </div>
+
+            <!-- Editorial Card (Right) -->
+            <div class="editorial-card slide-up delay-1">
+                <span class="editorial-quote-mark">"</span>
+                <blockquote class="editorial-text">
+                    Somos una Iglesia que cree en Dios y nuestra misión es compartir el Evangelio de Jesucristo; de tal manera de hacer discípulos
+                    que se conviertan en líderes maduros y fructíferos, que puedan ayudar a otros y alcanzarlos para Cristo.
+                    Su luz es el faro que ilumina nuestros caminos, para todos quienes buscan dirección. Queremos que éste sea un espacio donde el
+                    amor de Dios y la fe en Jesucristo transformen tu vida.
+
+                    
+                </blockquote>
+                <div class="editorial-author">
+                    <img src="images/profile.jpg"
+                        alt="Pastor Principal" loading="lazy">
+                    <div class="author-info">
+                        <h5>Rev. Manuel y Ana Romero</h5>
+                        <p>Pastores</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contacto" class="footer">
+        <div class="container footer-grid">
+            <div class="footer-info slide-up">
+                <h3>Iglesia Cristiana <span>Casa Del Alfarero</span></h3>
+                <p>Transformando vidas a través de un mensaje de amor, fe y esperanza inquebrantable.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#" aria-label="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="https://www.youtube.com/@iglesiacristianaCDA" target="blank" aria-label="Youtube"><ion-icon name="logo-youtube"></ion-icon></a>
+                </div>
+            </div>
+            <div class="footer-contact slide-up delay-1">
+                <h4>Visítanos</h4>
+                <p><ion-icon name="location-outline"></ion-icon> 80 Grand Ave. Hackensack, NJ</p>
+                <p><ion-icon name="call-outline"></ion-icon> +1 (201) 587-9687</p>
+                <p><ion-icon name="mail-outline"></ion-icon> info@casadelalfarero</p>
+            </div>
+            <div class="footer-newsletter slide-up delay-2">
+                <h4>Mantente Informado</h4>
+                <form class="newsletter-form" id="newsletter-form" action="enviar_correo.php" method="POST">
+                    <input type="hidden" name="tipo_mensaje" value="nueva_suscripcion">
+                    <input type="hidden" name="nombre" value="Nuevo Boletín">
+                    <label for="email" class="sr-only">Correo electrónico</label>
+                    <input type="email" id="email" name="mensaje" placeholder="Tu correo electrónico" required>
+                    <button type="submit" class="btn-primary" id="newsletter-submit">
+                        <span class="btn-text">Suscribirse</span>
+                        <ion-icon name="reload-outline" class="btn-loading" style="display:none;"></ion-icon>
+                    </button>
+                </form>
+                <div id="newsletter-success" class="newsletter-success" style="display:none;">
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    <p>¡Gracias por suscribirte!</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Iglesia Cristiana Casa Del Alfarero. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Gallery Lightbox Modal -->
+    <div class="lightbox-overlay" id="gallery-lightbox">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Cerrar imagen"><ion-icon
+                name="close-outline"></ion-icon></button>
+        <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Imagen anterior"><ion-icon
+                name="chevron-back-outline"></ion-icon></button>
+        <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Imagen siguiente"><ion-icon
+                name="chevron-forward-outline"></ion-icon></button>
+        <div class="lightbox-content">
+            <img src="" alt="Vista ampliada" id="lightbox-img">
+            <h3 id="lightbox-caption" class="lightbox-caption"></h3>
+        </div>
+    </div>
+
+    <!-- Event Modal Overlay -->
+    <div class="modal-overlay" id="event-modal">
+        <div class="modal-card">
+            <button class="modal-close" id="modal-close" aria-label="Cerrar modal"><ion-icon
+                    name="close-outline"></ion-icon></button>
+            <div class="modal-content">
+                <div class="modal-date" id="modal-date">15 Oct</div>
+                <h3 id="modal-title">Noche de Adoración</h3>
+                <p class="modal-time"><ion-icon name="time-outline"></ion-icon> <span id="modal-time-text">19:00
+                        hrs</span></p>
+                <p id="modal-desc">Únete a nosotros para una noche especial llena de música inspiradora y oración
+                    comunitaria.</p>
+                <a href="#contacto" class="btn-primary"
+                    onclick="document.getElementById('event-modal').classList.remove('active'); document.body.style.overflow='auto';">Me
+                    Interesa</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Modal Overlay -->
+    <div class="modal-overlay video-modal-overlay" id="video-modal">
+        <button class="lightbox-close" id="video-modal-close" aria-label="Cerrar video"><ion-icon
+                name="close-outline"></ion-icon></button>
+        <div class="video-modal-content">
+            <div class="video-wrapper">
+                <iframe id="sermon-iframe" width="100%" height="100%" src="" title="Sermón Dominical" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón Volver Arriba -->
+    <a href="#inicio" class="back-to-top" id="back-to-top" aria-label="Volver arriba">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+    </a>
+
+    <!-- Scripts for animations and interactions -->
+    <script>
+        const nav = document.getElementById('main-nav');
+
+        // Mobile Menu Toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        const navItems = document.querySelectorAll('.nav-links a');
+
+        const toggleMenu = () => {
+            const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+            menuToggle.setAttribute('aria-expanded', !isExpanded);
+            navLinks.classList.toggle('active');
+            nav.classList.toggle('menu-open');
+            // Prevent background scrolling when menu is open
+            document.body.style.overflow = isExpanded ? 'auto' : 'hidden';
+        };
+
+        menuToggle.addEventListener('click', toggleMenu);
+
+        // Close menu when a link is clicked
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                if (navLinks.classList.contains('active')) {
+                    toggleMenu();
+                }
+            });
+        });
+
+        // Navbar transparent-to-solid on scroll
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Intersection Observer for scroll-triggered micro-animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('appear');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Apply observer to hidden elements
+        document.querySelectorAll('.slide-up, .fade-in').forEach(el => {
+            el.classList.add('hidden-state');
+            observer.observe(el);
+        });
+
+        // Parallax Effect for Hero Background
+        const heroBg = document.getElementById('hero-bg');
+
+        // Back to top button logic
+        const backToTop = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', () => {
+            // Parallax
+            if (window.scrollY < window.innerHeight) {
+                // Mueve el fondo a menor velocidad que el scroll (0.4)
+                heroBg.style.transform = `translate3d(0, ${window.scrollY * 0.4}px, 0)`;
+            }
+
+            // Back to top visibility
+            if (window.scrollY > 500) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        // Newsletter form interaction
+        const newsletterForm = document.getElementById('newsletter-form');
+        const newsletterSubmit = document.getElementById('newsletter-submit');
+        const newsletterSuccess = document.getElementById('newsletter-success');
+
+        if (newsletterForm) {
+            newsletterForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const btnText = newsletterSubmit.querySelector('.btn-text');
+                const btnLoading = newsletterSubmit.querySelector('.btn-loading');
+
+                // Set loading state
+                btnText.style.display = 'none';
+                btnLoading.style.display = 'inline-block';
+                btnLoading.classList.add('spin-animation');
+
+                // Fetch API para despachar silenciosamente al servidor PHP (sin recargar)
+                fetch(newsletterForm.action, {
+                    method: 'POST',
+                    body: new FormData(newsletterForm)
+                }).then(() => {
+                    // Success Animating Transition UI
+                    newsletterForm.style.display = 'none';
+                    newsletterSuccess.style.display = 'flex';
+                }).catch(error => {
+                    console.error('Error de suscripción:', error);
+                    newsletterForm.style.display = 'none';
+                    newsletterSuccess.style.display = 'flex'; // Failback local
+                });
+            });
+        }
+
+        // Calendar & Modal Logic
+        const calendarDays = document.getElementById('calendar-days');
+        const monthTitle = document.getElementById('calendar-month');
+
+        const testToday = new Date();
+        const yy = testToday.getFullYear();
+        const mm = (testToday.getMonth() + 1).toString().padStart(2, '0');
+
+        // Mock Events DB (dynamic to current month)
+        const churchEvents = [
+            { date: `${yy}-${mm}-15`, title: 'Noche de Adoración y Alabanza', time: '19:00 hrs', desc: 'Únete a nosotros para una noche especial llena de música inspiradora.' },
+            { date: `${yy}-${mm}-22`, title: 'Retiro Anual de Mujeres', time: '08:00 hrs', desc: 'Un fin de semana diseñado para la renovación espiritual.' },
+            { date: `${yy}-${mm}-05`, title: 'Jóvenes Vivos', time: '18:30 hrs', desc: 'Actividades dinámicas y compañerismo real.' },
+            { date: `${yy}-${mm}-29`, title: 'Domingo Familiar', time: '10:00 hrs', desc: 'Servicio especial con sorpresas para toda la familia.' }
+        ];
+
+        let displayDate = new Date();
+
+        const renderCalendar = () => {
+            if (!calendarDays) return;
+            calendarDays.innerHTML = '';
+
+            const year = displayDate.getFullYear();
+            const month = displayDate.getMonth();
+
+            const monthNames = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+            const monthNamesShort = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'];
+            monthTitle.innerText = `${monthNames[month]} ${year}`;
+
+            const firstDay = new Date(year, month, 1).getDay();
+            const daysInMonth = new Date(year, month + 1, 0).getDate();
+            const actualToday = new Date();
+
+            for (let i = 0; i < firstDay; i++) {
+                const emptyCell = document.createElement('div');
+                emptyCell.className = 'calendar-day empty';
+                calendarDays.appendChild(emptyCell);
+            }
+
+            for (let i = 1; i <= daysInMonth; i++) {
+                const dayCell = document.createElement('div');
+                dayCell.className = 'calendar-day';
+                dayCell.innerText = i;
+
+                if (year === actualToday.getFullYear() && month === actualToday.getMonth() && i === actualToday.getDate()) {
+                    dayCell.classList.add('today');
+                }
+
+                const currentCellDateStr = `${year}-${(month + 1).toString().padStart(2, '0')}-${i.toString().padStart(2, '0')}`;
+                const eventForDay = churchEvents.find(e => e.date === currentCellDateStr);
+
+                if (eventForDay) {
+                    dayCell.classList.add('has-event');
+                    dayCell.addEventListener('click', () => {
+                        document.getElementById('modal-date').innerText = `${i} ${monthNamesShort[month]}`;
+                        document.getElementById('modal-title').innerText = eventForDay.title;
+                        document.getElementById('modal-time-text').innerText = eventForDay.time;
+                        document.getElementById('modal-desc').innerText = eventForDay.desc;
+                        document.getElementById('event-modal').classList.add('active');
+                        document.body.style.overflow = 'hidden';
+                    });
+                }
+
+                calendarDays.appendChild(dayCell);
+            }
+        };
+
+        if (document.getElementById('prev-month')) {
+            document.getElementById('prev-month').addEventListener('click', () => {
+                displayDate.setMonth(displayDate.getMonth() - 1);
+                renderCalendar();
+            });
+            document.getElementById('next-month').addEventListener('click', () => {
+                displayDate.setMonth(displayDate.getMonth() + 1);
+                renderCalendar();
+            });
+
+            document.getElementById('modal-close').addEventListener('click', () => {
+                document.getElementById('event-modal').classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+
+            document.getElementById('event-modal').addEventListener('click', (e) => {
+                if (e.target.id === 'event-modal') {
+                    document.getElementById('event-modal').classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                }
+            });
+            renderCalendar();
+        }
+
+        // Gallery Lightbox Logic
+        const galleryItems = Array.from(document.querySelectorAll('.gallery-item'));
+        const lightbox = document.getElementById('gallery-lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxCaption = document.getElementById('lightbox-caption');
+        const lightboxClose = document.getElementById('lightbox-close');
+        const lightboxPrev = document.getElementById('lightbox-prev');
+        const lightboxNext = document.getElementById('lightbox-next');
+
+        let currentLightboxIndex = 0;
+
+        const updateLightboxContent = (index) => {
+            if (index < 0) currentLightboxIndex = galleryItems.length - 1;
+            else if (index >= galleryItems.length) currentLightboxIndex = 0;
+            else currentLightboxIndex = index;
+
+            const item = galleryItems[currentLightboxIndex];
+            const img = item.querySelector('img');
+            const caption = item.querySelector('h4').innerText;
+
+            let highResSrc = img.src.split('?')[0] + '?auto=format&fit=crop&w=1600&q=90';
+
+            lightboxImg.src = highResSrc;
+            lightboxCaption.innerText = caption;
+        };
+
+        galleryItems.forEach((item, index) => {
+            item.addEventListener('click', () => {
+                updateLightboxContent(index);
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        const closeLightbox = () => {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto';
+            setTimeout(() => { lightboxImg.src = ''; }, 300);
+        };
+
+        if (lightboxPrev) lightboxPrev.addEventListener('click', () => updateLightboxContent(currentLightboxIndex - 1));
+        if (lightboxNext) lightboxNext.addEventListener('click', () => updateLightboxContent(currentLightboxIndex + 1));
+        if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+
+        if (lightbox) {
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox || e.target.classList.contains('lightbox-content')) closeLightbox();
+            });
+        }
+
+        // Key bindings for Modals and Gallery
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                if (document.getElementById('event-modal') && document.getElementById('event-modal').classList.contains('active')) {
+                    document.getElementById('event-modal').classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                }
+                if (lightbox && lightbox.classList.contains('active')) {
+                    closeLightbox();
+                }
+            }
+            if (lightbox && lightbox.classList.contains('active')) {
+                if (e.key === 'ArrowLeft') {
+                    updateLightboxContent(currentLightboxIndex - 1);
+                } else if (e.key === 'ArrowRight') {
+                    updateLightboxContent(currentLightboxIndex + 1);
+                }
+            }
+        });
+
+        // Form Submission Notifications (PHP Backend response)
+        const urlParams = new URLSearchParams(window.location.search);
+        const toast = document.getElementById('toast-notification');
+
+        if (urlParams.get('estado') === 'exito' && toast) {
+            // Mostrar sutilmente la notificacion con retardo ligero
+            setTimeout(() => {
+                toast.classList.add('show');
+                // Borrar '?estado=exito' de la barra de estado superior de forma invisible
+                window.history.replaceState({}, document.title, window.location.pathname);
+            }, 500);
+
+            // Ocultar la nube flotante pasados unos 6 segundos
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 6000);
+        }
+
+        // Video Modal Logic (Sermón Cinemático)
+        const sermonPlayBtn = document.getElementById('sermon-play-btn');
+        const videoModal = document.getElementById('video-modal');
+        const videoModalClose = document.getElementById('video-modal-close');
+        const sermonIframe = document.getElementById('sermon-iframe');
+
+        // URL Oficial de YouTube para la Prédica (Reemplazar este enlace por el tuyo)
+        // Usando dominio nocookie para evitar bloqueos locales de Chrome.
+        const youtubeVideoUrl = "https://www.youtube-nocookie.com/embed/ScMzIvxBSi4?autoplay=1&rel=0";
+
+        if (sermonPlayBtn && videoModal) {
+            sermonPlayBtn.addEventListener('click', () => {
+                sermonIframe.src = youtubeVideoUrl;
+                videoModal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+
+            // Eventos de teclado (Enter) por accesibilidad Web
+            sermonPlayBtn.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter') sermonPlayBtn.click();
+            });
+
+            const closeVideoModal = () => {
+                videoModal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+                // Espera medio segundo que termine animacion y mata el sonido del video
+                setTimeout(() => { sermonIframe.src = ""; }, 300);
+            };
+
+            videoModalClose.addEventListener('click', closeVideoModal);
+
+            videoModal.addEventListener('click', (e) => {
+                if (e.target === videoModal) closeVideoModal();
+            });
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && videoModal.classList.contains('active')) {
+                    closeVideoModal();
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
